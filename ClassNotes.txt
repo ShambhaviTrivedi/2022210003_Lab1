@@ -1,0 +1,190 @@
+Ubuntu
+# tab -autocomplete
+# removing directory_______delete: files
+#files with .(dot) infront of their names, these are hidden fies----with file permission for users only as rwx and no permissions for other users
+#echo: to make OS mimic your words
+  echo "Hi"
+the OS will show Hi
+this is not saved anywhere.
+# -r : reccursive     //ARGUEMENT
+#-i: interactive   :;If will reask before completing the command   //ARGUEMENT
+#rmdir; remove directory
+--------------------------------------------------------------------------------------------------------------------------------------
+1, pwd: print working directory
+  => pwd   (enter)
+    shows the current working phase
+
+2. ls :List
+ls  -l :long list of the directory (won't shows .(dot) files
+ls -a :shows files which have .(dot) infront of their name.
+after ls are called arguments.
+
+3.mkdir directory1  :Making new directory  named "directory1"
+		can be used for creating sub directories
+
+4. cd (name)  :change directory
+   cd directory1     (enter  :takes you to the directory1)
+
+5. Absolute Path : when we give complete the path for a directory
+
+6. Relative Path:  when we use various keys to refer our directories Example: 
+ cd  ..   : It goes tothe parent directory
+ cd .  : current directory.
+ ~ : take you back to the home directory
+cd /: go to the root directory
+
+7. Ownership: 
+ ls (enter)
+---the file access--  root   root  --sizeoffile--  --last access date--  ---last access time-- --directory--
+
+8. File Permissions
+--thefieaccess-- : 	first 4: User
+      		next 3: group
+		next 3: others 
+d:file type
+r: permission to read fie
+w; permission to write file
+x: permission to excute the file
+-i: interactive
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+// FILE OPERATIONS
+
+1.touch  : creates new files  within the directory
+   syntax:  (wintin the directory where you want to save the file)
+          touch (filename).(filetype)
+ex;    touch file1.txt
+
+2. > :redirecting command: used to type within the file
+ exam:   echo hello >file1.txt
+ the hello word is saved within the file1.txt  | | it didn't print it on the std output device (monitor)
+ everytime we use > the files are over written. So if we use this > in a file which already have data in it the original file is overwritten i.e. original file 
+
+3. >> ; Append in the existing files
+ex:  echo students >> file1.txt
+To edit we use this only. 
+use " " to print line with lots of spaces and special characters.
+use "\" infront of any special char to avoid confusion with OS commands.
+
+4. cat : to see the file content
+
+5 wc: word count
+  syn: wc -1
+
+6. cp: copy file
+
+7.mv: to move or renaming the files
+
+8. rm(filename)
+
+9. < : redirect the words to Monitors
+ ex: 	echo hi  < file1.txt
+
+10.To search about the commands: man (command)
+     to search a specific word in the manual : /(word)
+  n->Forward Search
+  N-> reverse search
+  q->Quit
+---------------------------------------------------------------------------------------------------------------------------
+//Jan 10,2023
+
+File editors
+1. nano filename 
+  ctrl + x: to save
+
+2.vi/vim: text editor
+ vi (filename)
+This have 2 modes
+  a. Text modes
+  b. command modes
+
+vi filename enter => goes to text mode    
+			     esp  leads to command mode.
+
+
+
+3. grep- occurence of the pattern
+4. -n - to ignore upper and lower cases
+5. history : to see the history of the conmmands
+6. pipe[ | ] system: to send output of one commad to another command as input.
+7. globbing: 
+8. echo $PATH: gives the path of the directory
+--------------------------------------------------------------------------------------------------------------------------------
+
+//BASH Scripting
+ nano myscript.sh
+ #!/bin/bash
+ echo "Hello"
+ctrl+X-> y-> enter
+-----------------------------------------------------------------------------------------------------------------------------------
+
+//Jan 13, 2023
+VARIABLES
+
+1. read= to read value in the variable
+#1/bin/bash
+echo What is your name?
+read My_name
+echo "Hello$My_name-hope you're well."
+Code:
+nano var.sh
+cat var.sh
+#!/bin/bash
+echo "Testing Input for user"
+read my_var
+echo "hello$my_var : How are you"
+ls -l var.sh
+chmod +x var.sh
+ls -l var.sh
+./var.sh
+
+
+2. expr=making expressions using variables created
+3. Change permission: chmod +x nameoffile.sh
+ 				ls -l filename.sh
+---------------------------------------------------------------------------------------------------------------------------------
+//Jan 25, 2023
+
+1. if statement
+2. for statement
+3. while statements
+4. Switch Case
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+5. Functions
+
+[name]()
+{ Block of code }   ----------------> Defining a function
+
+calling a functions
+just
+	name
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
