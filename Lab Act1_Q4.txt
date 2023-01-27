@@ -1,0 +1,39 @@
+root@LAPTOP-SJ9VFH13:~# mkdir 2022210003
+root@LAPTOP-SJ9VFH13:~# cd 2022210003
+root@LAPTOP-SJ9VFH13:~/2022210003# pwd
+/root/2022210003
+root@LAPTOP-SJ9VFH13:~/2022210003# echo "Hello, This is Lab 1 Activity"
+Hello, This is Lab 1 Activity
+root@LAPTOP-SJ9VFH13:~/2022210003# touch names.txt
+root@LAPTOP-SJ9VFH13:~/2022210003# codes names.txt
+codes: command not found
+root@LAPTOP-SJ9VFH13:~/2022210003# code names.txt
+root@LAPTOP-SJ9VFH13:~/2022210003# cat names.txt
+Shambhavi
+Meenarvi
+Apoorva
+Sameeksha
+Lakshmiroot@LAPTOP-SJ9VFH13:~/2022210003# touch copy.txt
+root@LAPTOP-SJ9VFH13:~/2022210003# cp names.txt copy.txt
+root@LAPTOP-SJ9VFH13:~/2022210003# cat copy.txt
+Shambhavi
+Meenarvi
+Apoorva
+Sameeksha
+Lakshmiroot@LAPTOP-SJ9VFH13:~/2022210003# rm names.txt
+root@LAPTOP-SJ9VFH13:~/2022210003# tail -2 copy.txt
+Sameeksha
+Lakshmiroot@LAPTOP-SJ9VFH13:~/2022210003# cat copy.txt
+Shambhavi
+Meenarvi
+Apoorva
+Sameeksha
+Lakshmiroot@LAPTOP-SJ9VFH13:~/2022210003# tail -4 copy.txt
+Meenarvi
+Apoorva
+Sameeksha
+Lakshmiroot@LAPTOP-SJ9VFH13:~/2022210003# tail -3 copy.txt
+Apoorva
+Sameeksha
+Lakshmiroot@LAPTOP-SJ9VFH13:~/2022210003# wc -l copy.txt
+4 copy.txt
